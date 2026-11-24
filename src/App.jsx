@@ -108,7 +108,7 @@ const content = {
           name: "STRIX : Surveillance acoustique",
           desc: "Réseau de capteurs acoustiques à faible coût pour la détection d'activités suspectes par triangulation, avec IA de détection embarquée sur microcontrôleur STM32.",
           stack: ["CAO", "Drone", "Triangulation", "IoT"],
-          stats: [["période", "Juin 2025 – Présent"], ["plateforme", "STM32"]],
+          stats: [["période", "Juin 2025 – Juillet 2026"], ["plateforme", "STM32"]],
           org: "Proteus Group",
         },
         {
@@ -133,8 +133,8 @@ const content = {
     contact: {
       label: "contact",
       title: "$ contact --send",
-      body: "Ouvert aux échanges autour de la défense, de l'aérospatial ou de tout projet d'ingénierie exigeant.",
-      email: "guillain.le_cocguen@edu.devinci.fr",
+      body: "Ouvert aux échanges autour de la tech, vous pouvez me contacter par mail ou sur mon linkedin. Si vous êtes interessé par quelques une de mes contributions open source vous pouvez les trouver sur github/hugging face.",
+      email: "guillain.le_cocguen@proteusgroup.eu",
     },
     footer: "compilé avec React · déployé depuis un terminal",
   },
@@ -153,11 +153,11 @@ const content = {
     },
     about: {
       label: "about",
-      title: "Why defense",
-      body: "Since my studies began, I've built my path around one conviction: putting engineering to work for national sovereignty. That conviction led me to Thales, where I worked on the Rafale F5's embedded systems, and it now drives my involvement leading Proteus Group and taking part in the ATLAS federation.",
+      title: "Why defense and sovereignty?",
+      body: "Since my studies began, I've built my path around one conviction: putting engineering to work for national and European sovereignty. That conviction led me to Thales, where I worked on the Rafale F5's embedded systems, and it now drives my involvement within Proteus Group.",
       specs: [
         ["school", "ESILV, Modeling & Computational Mechanics, Aerospace & Defense Track"],
-        ["exchange", "Budapest University of Technology and Economics"],
+        ["erasmus exchange", "Budapest University of Technology and Economics"],
         ["languages", "French native · English B2+ · German A2"],
       ],
     },
@@ -165,6 +165,13 @@ const content = {
       label: "professional experience",
       title: "Professional Experience",
       items: [
+        {
+          date: "Aug. 2025 – Present",
+          title: "Vice President",
+          org: "Proteus Group",
+          desc: "Leading the association's activities and coordinating multidisciplinary teams on defense projects: autonomous systems, robotics, embedded AI.",
+          logo: "proteus",
+        },
         {
           date: "Jul. 2026 – Present",
           title: "Deputy External Vice President",
@@ -178,13 +185,6 @@ const content = {
           org: "Thales LAS, Élancourt",
           desc: "Performance evaluation of an embedded platform (NVIDIA Jetson Orin/Thor) for radar and optronic applications, supporting the Rafale standard F5.",
           logo: "thales",
-        },
-        {
-          date: "Aug. 2025 – Present",
-          title: "Vice President",
-          org: "Proteus Group",
-          desc: "Leading the association's activities and coordinating multidisciplinary teams on defense projects: autonomous systems, robotics, embedded AI.",
-          logo: "proteus",
         },
         {
           date: "Apr. 2025 – Mar. 2026",
@@ -215,7 +215,7 @@ const content = {
           name: "STRIX: Acoustic Surveillance",
           desc: "Low-cost acoustic sensor network for detecting suspicious activity via triangulation, with embedded detection AI running on an STM32 microcontroller.",
           stack: ["CAD", "Drone", "Triangulation", "IoT"],
-          stats: [["timeline", "Jun. 2025 – Present"], ["platform", "STM32"]],
+          stats: [["timeline", "Jun. 2025 – Jul. 2026"], ["platform", "STM32"]],
           org: "Proteus Group",
         },
         {
@@ -240,8 +240,8 @@ const content = {
     contact: {
       label: "contact",
       title: "$ contact --send",
-      body: "Open to conversations about defense, aerospace, or any engineering project worth doing properly.",
-      email: "guillain.le_cocguen@edu.devinci.fr",
+      body: "Open to conversations about tech. You can reach me by email or on LinkedIn. If you're interested in some of my open source contributions, you'll find them on GitHub and Hugging Face.",
+      email: "guillain.le_cocguen@proteusgroup.eu",
     },
     footer: "compiled with React · deployed from a terminal",
   },
