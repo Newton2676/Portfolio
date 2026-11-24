@@ -50,7 +50,7 @@ const content = {
       body: "Depuis mes études, je construis mon parcours autour d'une conviction : mettre l'ingénierie au service de la souveraineté nationale et européenne. Cette conviction m'a mené chez Thales, où j'ai travaillé sur les systèmes embarqués du Rafale F5, et elle anime aujourd'hui mon engagement au sein de Proteus Group.",
       specs: [
         ["école", "ESILV, Spécialité Modélisation & Mécanique Numérique, Filière Aérospatiale et Défense"],
-        ["échange", "Budapest University of Technology and Economics"],
+        ["échange erasmus", "Budapest University of Technology and Economics"],
         ["langues", "Français natif · Anglais B2+ · Allemand A2"],
       ],
     },
@@ -58,6 +58,13 @@ const content = {
       label: "expérience professionnelle",
       title: "Expérience professionnelle",
       items: [
+        {
+          date: "Août 2025 – Présent",
+          title: "Vice-président",
+          org: "Proteus Group",
+          desc: "Pilotage des activités de l'association et coordination d'équipes pluridisciplinaires sur des projets défense : systèmes autonomes, robotique, IA embarquée.",
+          logo: "proteus",
+        },
         {
           date: "Juil. 2026 – Présent",
           title: "Adjoint Vice-président Externe",
@@ -71,13 +78,6 @@ const content = {
           org: "Thales LAS, Élancourt",
           desc: "Évaluation de performances d'une plateforme embarquée (NVIDIA Jetson Orin/Thor) pour des applications radar et optroniques, au profit du Rafale standard F5.",
           logo: "thales",
-        },
-        {
-          date: "Août 2025 – Présent",
-          title: "Vice-président",
-          org: "Proteus Group",
-          desc: "Pilotage des activités de l'association et coordination d'équipes pluridisciplinaires sur des projets défense : systèmes autonomes, robotique, IA embarquée.",
-          logo: "proteus",
         },
         {
           date: "Avr. 2025 – Mars 2026",
