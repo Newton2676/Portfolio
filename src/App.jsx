@@ -47,7 +47,7 @@ const content = {
     about: {
       label: "à propos",
       title: "Pourquoi la défense et la souveraineté ?",
-      body: "Depuis mes études, je construis mon parcours autour d'une conviction : mettre l'ingénierie au service de la souveraineté nationale. Cette conviction m'a mené chez Thales, où j'ai travaillé sur les systèmes embarqués du Rafale F5, et elle anime aujourd'hui mon engagement à la tête de Proteus Group et au sein de la Fédération ATLAS.",
+      body: "Depuis mes études, je construis mon parcours autour d'une conviction : mettre l'ingénierie au service de la souveraineté nationale et européenne. Cette conviction m'a mené chez Thales, où j'ai travaillé sur les systèmes embarqués du Rafale F5, et elle anime aujourd'hui mon engagement au sein de Proteus Group.",
       specs: [
         ["école", "ESILV, Spécialité Modélisation & Mécanique Numérique, Filière Aérospatiale et Défense"],
         ["échange", "Budapest University of Technology and Economics"],
