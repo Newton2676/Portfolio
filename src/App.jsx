@@ -92,9 +92,14 @@ const content = {
       label: "projets",
       title: "Projets techniques",
       internalTag: "Thales",
-      soonTitle: "D'autres projets arrivent",
-      soonDesc: "Projets académiques et personnels (HuggingFace, ML) en cours de compilation.",
       items: [
+        {
+          pid: "HYDRA",
+          name: "HYDRA : Rover sous-marin",
+          desc: "Création d'un rover sous-marin pour le championnat du monde de robotique sous-marine, avec une équipe de 18 personnes dont j'assure la direction en tant que chef de projet. Conception du calculateur embarqué (architecture matérielle et logicielle, gestion des buffers d'acquisition) et utilisation d'une IA de vision pour réaliser des tâches automatiquement.",
+          stack: ["CAO", "Rover sous-marin", "Calculateur", "IA/vision"],
+          stats: [["période", "Juil. 2026 – Présent"], ["équipe", "18 personnes"]],
+        },
         {
           pid: "TAALOS",
           name: "TAALOS : Tourelle EOTS à IA embarquée",
@@ -112,12 +117,51 @@ const content = {
           org: "Proteus Group",
         },
         {
+          pid: "JNCS",
+          name: "JNCS : Jumeau numérique collaboratif souverain",
+          desc: "Architecture distribuée de jumeau numérique souverain pour l'industrie de défense, avec simulation temps réel. Modèle de coopération sécurisé (preuves à divulgation nulle de connaissance, chiffrement homomorphe, apprentissage fédéré) et agents IA locaux (LLM + RAG) pour intégrer de façon autonome des données hétérogènes.",
+          stack: ["Edge AI", "LLM + RAG", "Federated learning"],
+          stats: [["période", "Janv. 2026 – Présent"], ["domaine", "Industrie de défense"]],
+        },
+        {
           pid: "IHM-PERF",
           name: "IHM Analyse de performance embarquée",
           desc: "Interface Python/Bash développée en stage : exécution automatisée de campagnes de tests et benchmarking complet d'une plateforme de calcul embarquée (CPU, GPU, DRAM, stockage, réseau, accélérateurs), avec génération de rapports.",
           stack: ["Python", "Bash", "Jetson Orin/Thor", "Benchmarking"],
           stats: [["cadre", "Thales LAS · Rafale F5"], ["accélérateurs", "PVA · VIC · OFA"]],
           internal: true,
+        },
+        {
+          pid: "PHYSICS-SOLVER",
+          name: "Physics Solver LLM",
+          desc: "Fine-tuning de Mistral-7B-Instruct-v0.3 en QLoRA 4 bits (GPU T4) pour résoudre des problèmes de physique de niveau licence. Démo Gradio déployée avec l'API Mistral pour l'inférence, et chatbot Mistral développé en JavaScript.",
+          stack: ["LLM", "QLoRA fine-tuning", "Mistral API"],
+          stats: [["période", "Juil. 2026"], ["modèle", "Mistral-7B-Instruct-v0.3"]],
+          org: "Projet personnel",
+        },
+        {
+          pid: "WIND-TUNNEL-CAR",
+          name: "Étude en soufflerie d'une voiture de course",
+          desc: "Modélisation d'une voiture de course sur Catia, puis impression et préparation du modèle pour tester plusieurs profils aérodynamiques (ailerons, châssis). Étude en soufflerie de ces profils et validation des meilleures configurations.",
+          stack: ["CAO", "CFD"],
+          stats: [["période", "Sept. 2026 – Janv. 2027"], ["essais", "Soufflerie"]],
+          org: "Projet académique",
+        },
+        {
+          pid: "BUILDING-AERO",
+          name: "Étude de l'aérodynamique d'un bâtiment",
+          desc: "Modélisation d'un immeuble modulaire, impression et préparation des différentes parties avec ajout de capteurs de pression. Simulation sur Star-CCM+, essais en soufflerie de plusieurs configurations, puis validation des modèles par comparaison simulation/soufflerie.",
+          stack: ["CAO", "Catia", "Star-CCM+"],
+          stats: [["période", "Sept. 2026 – Déc. 2026"], ["validation", "Simulation vs soufflerie"]],
+          org: "Projet académique",
+        },
+        {
+          pid: "AIRLINER-CFD",
+          name: "Étude d'un avion de ligne sur Ansys",
+          desc: "Paramétrage d'un maillage sur Ansys pour étudier un avion de ligne dans différentes configurations atmosphériques, puis interprétation des résultats : pression, flux sur les ailes et forces appliquées.",
+          stack: ["Ansys", "CFD"],
+          stats: [["période", "Déc. 2025 – Avr. 2026"], ["analyse", "Pression · flux · forces"]],
+          org: "Projet académique",
         },
       ],
       hackathons: [
@@ -199,9 +243,14 @@ const content = {
       label: "projects",
       title: "Technical projects",
       internalTag: "Thales",
-      soonTitle: "More projects coming",
-      soonDesc: "Academic and personal projects (HuggingFace, ML) currently being compiled.",
       items: [
+        {
+          pid: "HYDRA",
+          name: "HYDRA: Underwater Rover",
+          desc: "Building an underwater rover for the world underwater robotics championship, leading a team of 18 as project manager. Designed the onboard computer (hardware and software architecture, acquisition buffer management) and used a vision AI so the rover can complete tasks automatically.",
+          stack: ["CAD", "Underwater rover", "Onboard computer", "Vision AI"],
+          stats: [["timeline", "Jul. 2026 – Present"], ["team", "18 people"]],
+        },
         {
           pid: "TAALOS",
           name: "TAALOS: EOTS Turret with Embedded AI",
@@ -219,12 +268,51 @@ const content = {
           org: "Proteus Group",
         },
         {
+          pid: "JNCS",
+          name: "JNCS: Sovereign Collaborative Digital Twin",
+          desc: "Distributed sovereign digital-twin architecture for the defense industry, with real-time simulation. Secure cooperation model (zero-knowledge proofs, homomorphic encryption, federated learning) and local AI agents (LLM + RAG) that autonomously integrate heterogeneous data.",
+          stack: ["Edge AI", "LLM + RAG", "Federated learning"],
+          stats: [["timeline", "Jan. 2026 – Present"], ["domain", "Defense industry"]],
+        },
+        {
           pid: "IHM-PERF",
           name: "Embedded Performance Analysis HMI",
           desc: "Python/Bash interface built during the internship: automated test-campaign execution and full benchmarking of an embedded compute platform (CPU, GPU, DRAM, storage, network, accelerators), with report generation.",
           stack: ["Python", "Bash", "Jetson Orin/Thor", "Benchmarking"],
           stats: [["context", "Thales LAS · Rafale F5"], ["accelerators", "PVA · VIC · OFA"]],
           internal: true,
+        },
+        {
+          pid: "PHYSICS-SOLVER",
+          name: "Physics Solver LLM",
+          desc: "Fine-tuned Mistral-7B-Instruct-v0.3 with 4-bit QLoRA (T4 GPU) to solve undergraduate-level physics problems. Deployed a Gradio demo using the Mistral API for inference, and built a Mistral chatbot in JavaScript.",
+          stack: ["LLM", "QLoRA fine-tuning", "Mistral API"],
+          stats: [["timeline", "Jul. 2026"], ["model", "Mistral-7B-Instruct-v0.3"]],
+          org: "Personal project",
+        },
+        {
+          pid: "WIND-TUNNEL-CAR",
+          name: "Wind Tunnel Study of a Race Car",
+          desc: "Modeled a race car in Catia, then printed and prepared the model to test several aerodynamic profiles (wings, chassis). Wind tunnel testing of these profiles and validation of the best configurations.",
+          stack: ["CAD", "CFD"],
+          stats: [["timeline", "Sept. 2026 – Jan. 2027"], ["testing", "Wind tunnel"]],
+          org: "Academic project",
+        },
+        {
+          pid: "BUILDING-AERO",
+          name: "Building Aerodynamics Study",
+          desc: "Modeled a modular building, then printed and prepared its parts with added pressure sensors. Simulation in Star-CCM+, wind tunnel tests of several configurations, and model validation by comparing simulation with wind tunnel results.",
+          stack: ["CAD", "Catia", "Star-CCM+"],
+          stats: [["timeline", "Sept. 2026 – Dec. 2026"], ["validation", "Simulation vs wind tunnel"]],
+          org: "Academic project",
+        },
+        {
+          pid: "AIRLINER-CFD",
+          name: "Airliner Study on Ansys",
+          desc: "Set up a mesh in Ansys to study an airliner under different atmospheric conditions, then interpreted the results: pressure, flow over the wings and applied forces.",
+          stack: ["Ansys", "CFD"],
+          stats: [["timeline", "Dec. 2025 – Apr. 2026"], ["analysis", "Pressure · flow · forces"]],
+          org: "Academic project",
         },
       ],
       hackathons: [
@@ -540,16 +628,6 @@ export default function Portfolio() {
               </div>
             </div>
           ))}
-          <div
-            className="card"
-            style={{
-              background: "transparent", border: `1px dashed ${C.border}`, borderRadius: 8, padding: 20,
-              display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", gap: 8, minHeight: 140,
-            }}
-          >
-            <span style={{ fontFamily: MONO, fontSize: 13, color: C.mutedDim }}>{t.projects.soonTitle}</span>
-            <span style={{ fontFamily: MONO, fontSize: 11, color: C.mutedDim, opacity: 0.7 }}>{t.projects.soonDesc}</span>
-          </div>
         </div>
 
         <div style={{ marginTop: 32 }}>
