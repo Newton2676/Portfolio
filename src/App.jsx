@@ -47,10 +47,10 @@ const content = {
     about: {
       label: "à propos",
       title: "Pourquoi la défense et la souveraineté ?",
-      body: "Depuis mes études, je construis mon parcours autour d'une conviction : mettre l'ingénierie au service de la souveraineté nationale et européenne. Cette conviction m'a mené chez Thales, où j'ai travaillé sur les systèmes embarqués du Rafale F5, et elle anime aujourd'hui mon engagement au sein de Proteus Group.",
+      body: "Selon moi, le pouvoir de décider de son destin repose sur la capacité à peser dans le monde, et la défense comme la souveraineté sont les leviers qui le permettent. C'est cette conviction qui m'a mené chez Thales, sur les systèmes embarqués du Rafale F5, et qui nourrit aujourd'hui mon engagement au sein de Proteus Group.",
       specs: [
         ["école", "ESILV, Spécialité Modélisation & Mécanique Numérique, Filière Aérospatiale et Défense"],
-        ["échange erasmus", "Budapest University of Technology and Economics"],
+        ["échange Erasmus", "Budapest University of Technology and Economics"],
         ["langues", "Français natif · Anglais B2+ · Allemand A2"],
       ],
     },
@@ -62,7 +62,7 @@ const content = {
           date: "Août 2025 – Présent",
           title: "Vice-président",
           org: "Proteus Group",
-          desc: "Pilotage des activités de l'association et coordination d'équipes pluridisciplinaires sur des projets défense : systèmes autonomes, robotique, IA embarquée.",
+          desc: "Pilotage des activités de l'association et coordination d'équipes pluridisciplinaires sur des projets défense : systèmes autonomes, robotique, IA embarquée, mais aussi naval et cyber. Organisation chaque année d'un hackathon de haut niveau et de la PAC (Proteus Award Ceremony), un événement d'envergure qui met en avant nos projets.",
           logo: "proteus",
         },
         {
@@ -96,9 +96,9 @@ const content = {
         {
           pid: "HYDRA",
           name: "HYDRA : Rover sous-marin",
-          desc: "Création d'un rover sous-marin pour le championnat du monde de robotique sous-marine, avec une équipe de 18 personnes dont j'assure la direction en tant que chef de projet. Conception du calculateur embarqué (architecture matérielle et logicielle, gestion des buffers d'acquisition) et utilisation d'une IA de vision pour réaliser des tâches automatiquement.",
+          desc: "Création d'un rover sous-marin pour le championnat du monde de robotique sous-marine, avec une équipe de 18 personnes dont j'assure la direction en tant que chef de projet. Conception du calculateur embarqué (architecture matérielle et logicielle, gestion des buffers d'acquisition). Partenariat majeur avec Safran.",
           stack: ["CAO", "Rover sous-marin", "Calculateur", "IA/vision"],
-          stats: [["période", "Juil. 2026 – Présent"], ["équipe", "18 personnes"]],
+          stats: [["période", "Juil. 2026 – Présent"], ["plateforme", "NVIDIA Jetson Orin NX"]],
         },
         {
           pid: "TAALOS",
@@ -119,9 +119,9 @@ const content = {
         {
           pid: "JNCS",
           name: "JNCS : Jumeau numérique collaboratif souverain",
-          desc: "Architecture distribuée de jumeau numérique souverain pour l'industrie de défense, avec simulation temps réel. Modèle de coopération sécurisé (preuves à divulgation nulle de connaissance, chiffrement homomorphe, apprentissage fédéré) et agents IA locaux (LLM + RAG) pour intégrer de façon autonome des données hétérogènes.",
+          desc: "Architecture distribuée de jumeau numérique souverain pour l'industrie de défense, avec simulation temps réel. Modèle de coopération sécurisé (ZKP, chiffrement homomorphe, apprentissage fédéré) et agents IA locaux (LLM + RAG) pour intégrer de façon autonome des données hétérogènes.",
           stack: ["Edge AI", "LLM + RAG", "Federated learning"],
-          stats: [["période", "Janv. 2026 – Présent"], ["domaine", "Industrie de défense"]],
+          stats: [["période", "Déc. 2025 – Mars 2026"], ["domaine", "Industrie de défense"]],
         },
         {
           pid: "IHM-PERF",
@@ -177,7 +177,7 @@ const content = {
     contact: {
       label: "contact",
       title: "$ contact --send",
-      body: "Ouvert aux échanges autour de la tech, vous pouvez me contacter par mail ou sur mon linkedin. Si vous êtes interessé par quelques une de mes contributions open source vous pouvez les trouver sur github/hugging face.",
+      body: "Ouvert aux échanges autour de la tech : vous pouvez me contacter par mail ou sur LinkedIn. Si mes contributions open source vous intéressent, vous les trouverez sur GitHub et Hugging Face.",
       email: "guillain.le_cocguen@proteusgroup.eu",
     },
     footer: "compilé avec React · déployé depuis un terminal",
@@ -198,10 +198,10 @@ const content = {
     about: {
       label: "about",
       title: "Why defense and sovereignty?",
-      body: "Since my studies began, I've built my path around one conviction: putting engineering to work for national and European sovereignty. That conviction led me to Thales, where I worked on the Rafale F5's embedded systems, and it now drives my involvement within Proteus Group.",
+      body: "In my view, the power to decide one's own destiny rests on the ability to carry weight in the world, and defense and sovereignty are the levers that make it possible. That conviction led me to Thales, working on the Rafale F5's embedded systems, and it now drives my involvement within Proteus Group.",
       specs: [
         ["school", "ESILV, Modeling & Computational Mechanics, Aerospace & Defense Track"],
-        ["erasmus exchange", "Budapest University of Technology and Economics"],
+        ["Erasmus exchange", "Budapest University of Technology and Economics"],
         ["languages", "French native · English B2+ · German A2"],
       ],
     },
@@ -213,7 +213,7 @@ const content = {
           date: "Aug. 2025 – Present",
           title: "Vice President",
           org: "Proteus Group",
-          desc: "Leading the association's activities and coordinating multidisciplinary teams on defense projects: autonomous systems, robotics, embedded AI.",
+          desc: "Leading the association's activities and coordinating multidisciplinary teams on defense projects: autonomous systems, robotics, embedded AI, but also naval and cyber. Organizing a high-level hackathon every year and the PAC (Proteus Award Ceremony), a major event showcasing our projects.",
           logo: "proteus",
         },
         {
@@ -247,9 +247,9 @@ const content = {
         {
           pid: "HYDRA",
           name: "HYDRA: Underwater Rover",
-          desc: "Building an underwater rover for the world underwater robotics championship, leading a team of 18 as project manager. Designed the onboard computer (hardware and software architecture, acquisition buffer management) and used a vision AI so the rover can complete tasks automatically.",
+          desc: "Building an underwater rover for the world underwater robotics championship, leading a team of 18 as project manager. Designed the onboard computer (hardware and software architecture, acquisition buffer management). Major partnership with Safran.",
           stack: ["CAD", "Underwater rover", "Onboard computer", "Vision AI"],
-          stats: [["timeline", "Jul. 2026 – Present"], ["team", "18 people"]],
+          stats: [["timeline", "Jul. 2026 – Present"], ["platform", "NVIDIA Jetson Orin NX"]],
         },
         {
           pid: "TAALOS",
@@ -270,9 +270,9 @@ const content = {
         {
           pid: "JNCS",
           name: "JNCS: Sovereign Collaborative Digital Twin",
-          desc: "Distributed sovereign digital-twin architecture for the defense industry, with real-time simulation. Secure cooperation model (zero-knowledge proofs, homomorphic encryption, federated learning) and local AI agents (LLM + RAG) that autonomously integrate heterogeneous data.",
+          desc: "Distributed sovereign digital-twin architecture for the defense industry, with real-time simulation. Secure cooperation model (ZKP, homomorphic encryption, federated learning) and local AI agents (LLM + RAG) that autonomously integrate heterogeneous data.",
           stack: ["Edge AI", "LLM + RAG", "Federated learning"],
-          stats: [["timeline", "Jan. 2026 – Present"], ["domain", "Defense industry"]],
+          stats: [["timeline", "Dec. 2025 – Mar. 2026"], ["domain", "Defense industry"]],
         },
         {
           pid: "IHM-PERF",
