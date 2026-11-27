@@ -91,10 +91,13 @@ const content = {
     projects: {
       label: "projets",
       title: "Projets techniques",
+      filters: { all: "Tous", meca: "Mécanique", elec: "Électronique", info: "Informatique" },
+      domainShort: { meca: "Méca", elec: "Élec", info: "Info" },
       internalTag: "Thales",
       items: [
         {
           pid: "HYDRA",
+          domains: ["meca", "elec", "info"],
           name: "HYDRA : Rover sous-marin",
           desc: "Création d'un rover sous-marin pour le championnat du monde de robotique sous-marine, avec une équipe de 18 personnes dont j'assure la direction en tant que chef de projet. Conception du calculateur embarqué (architecture matérielle et logicielle, gestion des buffers d'acquisition). Partenariat majeur avec Safran.",
           stack: ["CAO", "Rover sous-marin", "Calculateur", "IA/vision"],
@@ -102,14 +105,16 @@ const content = {
         },
         {
           pid: "TAALOS",
+          domains: ["meca", "elec", "info"],
           name: "TAALOS : Tourelle EOTS à IA embarquée",
           desc: "Conception complète d'une tourelle électro-optique de détection et suivi de cibles : architecture mécanique et électronique, intégration d'une IA embarquée YOLO sur NVIDIA Jetson pour la reconnaissance de cibles.",
           stack: ["CAO", "SoM", "KiCad", "Edge AI (YOLO)"],
-          stats: [["période", "Oct. 2025 – Juil. 2026"], ["plateforme", "NVIDIA Jetson"]],
+          stats: [["période", "Oct. 2025 – Juil. 2026"], ["plateforme", "NVIDIA Jetson"], ["distinction", "Prix du public PI2 ESILV"]],
           org: "Proteus Group",
         },
         {
           pid: "STRIX",
+          domains: ["elec", "info"],
           name: "STRIX : Surveillance acoustique",
           desc: "Réseau de capteurs acoustiques à faible coût pour la détection d'activités suspectes par triangulation, avec IA de détection embarquée sur microcontrôleur STM32.",
           stack: ["CAO", "Drone", "Triangulation", "IoT"],
@@ -118,13 +123,15 @@ const content = {
         },
         {
           pid: "JNCS",
+          domains: ["info"],
           name: "JNCS : Jumeau numérique collaboratif souverain",
-          desc: "Architecture distribuée de jumeau numérique souverain pour l'industrie de défense, avec simulation temps réel. Modèle de coopération sécurisé (ZKP, chiffrement homomorphe, apprentissage fédéré) et agents IA locaux (LLM + RAG) pour intégrer de façon autonome des données hétérogènes.",
+          desc: "Architecture distribuée de jumeau numérique souverain pour l'industrie de défense, avec simulation temps réel. Modèle de coopération sécurisé (ZKP, chiffrement homomorphe, apprentissage fédéré) et agents IA locaux (LLM + RAG) pour intégrer de façon autonome des données hétérogènes. Projet d'équipe dont je suis l'architecte de la solution : j'ai participé à la réflexion et à la conception de l'ensemble du projet.",
           stack: ["Edge AI", "LLM + RAG", "Federated learning"],
-          stats: [["période", "Déc. 2025 – Mars 2026"], ["domaine", "Industrie de défense"]],
+          stats: [["période", "Déc. 2025 – Mars 2026"], ["rôle", "Architecte de la solution"], ["distinction", "Vainqueur AMJE Defense Hackathon"]],
         },
         {
           pid: "IHM-PERF",
+          domains: ["elec", "info"],
           name: "IHM Analyse de performance embarquée",
           desc: "Interface Python/Bash développée en stage : exécution automatisée de campagnes de tests et benchmarking complet d'une plateforme de calcul embarquée (CPU, GPU, DRAM, stockage, réseau, accélérateurs), avec génération de rapports.",
           stack: ["Python", "Bash", "Jetson Orin/Thor", "Benchmarking"],
@@ -133,14 +140,16 @@ const content = {
         },
         {
           pid: "PHYSICS-SOLVER",
+          domains: ["info"],
           name: "Physics Solver LLM",
-          desc: "Fine-tuning de Mistral-7B-Instruct-v0.3 en QLoRA 4 bits (GPU T4) pour résoudre des problèmes de physique de niveau licence. Démo Gradio déployée avec l'API Mistral pour l'inférence, et chatbot Mistral développé en JavaScript.",
+          desc: "Fine-tuning de Mistral-7B-Instruct-v0.3 en QLoRA 4 bits (GPU T4) pour résoudre des problèmes de physique de niveau licence, avec une démo Gradio utilisant l'API Mistral pour l'inférence et un chatbot Mistral en JavaScript.",
           stack: ["LLM", "QLoRA fine-tuning", "Mistral API"],
           stats: [["période", "Juil. 2026"], ["modèle", "Mistral-7B-Instruct-v0.3"]],
           org: "Projet personnel",
         },
         {
           pid: "WIND-TUNNEL-CAR",
+          domains: ["meca"],
           name: "Étude en soufflerie d'une voiture de course",
           desc: "Modélisation d'une voiture de course sur Catia, puis impression et préparation du modèle pour tester plusieurs profils aérodynamiques (ailerons, châssis). Étude en soufflerie de ces profils et validation des meilleures configurations.",
           stack: ["CAO", "CFD"],
@@ -149,6 +158,7 @@ const content = {
         },
         {
           pid: "BUILDING-AERO",
+          domains: ["meca"],
           name: "Étude de l'aérodynamique d'un bâtiment",
           desc: "Modélisation d'un immeuble modulaire, impression et préparation des différentes parties avec ajout de capteurs de pression. Simulation sur Star-CCM+, essais en soufflerie de plusieurs configurations, puis validation des modèles par comparaison simulation/soufflerie.",
           stack: ["CAO", "Catia", "Star-CCM+"],
@@ -157,6 +167,7 @@ const content = {
         },
         {
           pid: "AIRLINER-CFD",
+          domains: ["meca"],
           name: "Étude d'un avion de ligne sur Ansys",
           desc: "Paramétrage d'un maillage sur Ansys pour étudier un avion de ligne dans différentes configurations atmosphériques, puis interprétation des résultats : pression, flux sur les ailes et forces appliquées.",
           stack: ["Ansys", "CFD"],
@@ -242,10 +253,13 @@ const content = {
     projects: {
       label: "projects",
       title: "Technical projects",
+      filters: { all: "All", meca: "Mechanical", elec: "Electronics", info: "Software" },
+      domainShort: { meca: "Mech", elec: "Elec", info: "Soft" },
       internalTag: "Thales",
       items: [
         {
           pid: "HYDRA",
+          domains: ["meca", "elec", "info"],
           name: "HYDRA: Underwater Rover",
           desc: "Building an underwater rover for the world underwater robotics championship, leading a team of 18 as project manager. Designed the onboard computer (hardware and software architecture, acquisition buffer management). Major partnership with Safran.",
           stack: ["CAD", "Underwater rover", "Onboard computer", "Vision AI"],
@@ -253,14 +267,16 @@ const content = {
         },
         {
           pid: "TAALOS",
+          domains: ["meca", "elec", "info"],
           name: "TAALOS: EOTS Turret with Embedded AI",
           desc: "Full design of an electro-optical tracking turret for moving-target detection: complete mechanical and electronic architecture, with embedded YOLO AI on NVIDIA Jetson for target recognition.",
           stack: ["CAD", "SoM", "KiCad", "Edge AI (YOLO)"],
-          stats: [["timeline", "Oct. 2025 – Jul. 2026"], ["platform", "NVIDIA Jetson"]],
+          stats: [["timeline", "Oct. 2025 – Jul. 2026"], ["platform", "NVIDIA Jetson"], ["award", "ESILV PI2 Audience Award"]],
           org: "Proteus Group",
         },
         {
           pid: "STRIX",
+          domains: ["elec", "info"],
           name: "STRIX: Acoustic Surveillance",
           desc: "Low-cost acoustic sensor network for detecting suspicious activity via triangulation, with embedded detection AI running on an STM32 microcontroller.",
           stack: ["CAD", "Drone", "Triangulation", "IoT"],
@@ -269,13 +285,15 @@ const content = {
         },
         {
           pid: "JNCS",
+          domains: ["info"],
           name: "JNCS: Sovereign Collaborative Digital Twin",
-          desc: "Distributed sovereign digital-twin architecture for the defense industry, with real-time simulation. Secure cooperation model (ZKP, homomorphic encryption, federated learning) and local AI agents (LLM + RAG) that autonomously integrate heterogeneous data.",
+          desc: "Distributed sovereign digital-twin architecture for the defense industry, with real-time simulation. Secure cooperation model (ZKP, homomorphic encryption, federated learning) and local AI agents (LLM + RAG) that autonomously integrate heterogeneous data. Team project in which I am the solution architect: I took part in the thinking and design of the whole project.",
           stack: ["Edge AI", "LLM + RAG", "Federated learning"],
-          stats: [["timeline", "Dec. 2025 – Mar. 2026"], ["domain", "Defense industry"]],
+          stats: [["timeline", "Dec. 2025 – Mar. 2026"], ["role", "Solution architect"], ["award", "AMJE Defense Hackathon winner"]],
         },
         {
           pid: "IHM-PERF",
+          domains: ["elec", "info"],
           name: "Embedded Performance Analysis HMI",
           desc: "Python/Bash interface built during the internship: automated test-campaign execution and full benchmarking of an embedded compute platform (CPU, GPU, DRAM, storage, network, accelerators), with report generation.",
           stack: ["Python", "Bash", "Jetson Orin/Thor", "Benchmarking"],
@@ -284,14 +302,16 @@ const content = {
         },
         {
           pid: "PHYSICS-SOLVER",
+          domains: ["info"],
           name: "Physics Solver LLM",
-          desc: "Fine-tuned Mistral-7B-Instruct-v0.3 with 4-bit QLoRA (T4 GPU) to solve undergraduate-level physics problems. Deployed a Gradio demo using the Mistral API for inference, and built a Mistral chatbot in JavaScript.",
+          desc: "Fine-tuned Mistral-7B-Instruct-v0.3 with 4-bit QLoRA (T4 GPU) to solve undergraduate-level physics problems, with a Gradio demo using the Mistral API for inference and a Mistral chatbot in JavaScript.",
           stack: ["LLM", "QLoRA fine-tuning", "Mistral API"],
           stats: [["timeline", "Jul. 2026"], ["model", "Mistral-7B-Instruct-v0.3"]],
           org: "Personal project",
         },
         {
           pid: "WIND-TUNNEL-CAR",
+          domains: ["meca"],
           name: "Wind Tunnel Study of a Race Car",
           desc: "Modeled a race car in Catia, then printed and prepared the model to test several aerodynamic profiles (wings, chassis). Wind tunnel testing of these profiles and validation of the best configurations.",
           stack: ["CAD", "CFD"],
@@ -300,6 +320,7 @@ const content = {
         },
         {
           pid: "BUILDING-AERO",
+          domains: ["meca"],
           name: "Building Aerodynamics Study",
           desc: "Modeled a modular building, then printed and prepared its parts with added pressure sensors. Simulation in Star-CCM+, wind tunnel tests of several configurations, and model validation by comparing simulation with wind tunnel results.",
           stack: ["CAD", "Catia", "Star-CCM+"],
@@ -308,6 +329,7 @@ const content = {
         },
         {
           pid: "AIRLINER-CFD",
+          domains: ["meca"],
           name: "Airliner Study on Ansys",
           desc: "Set up a mesh in Ansys to study an airliner under different atmospheric conditions, then interpreted the results: pressure, flow over the wings and applied forces.",
           stack: ["Ansys", "CFD"],
@@ -398,6 +420,7 @@ const badgeColor = (c) => (c === "amber" ? C.amber : c === "blue" ? C.blue : C.m
 
 export default function Portfolio() {
   const [lang, setLang] = useState("fr");
+  const [filter, setFilter] = useState("all");
   const t = content[lang];
   const sectionRefs = { about: useRef(null), career: useRef(null), projects: useRef(null), contact: useRef(null) };
   const navKeys = ["about", "career", "projects", "contact"];
@@ -593,9 +616,33 @@ export default function Portfolio() {
       {/* Projects */}
       <section ref={sectionRefs.projects} style={{ maxWidth: 1040, margin: "0 auto", padding: "50px 24px" }}>
         <SectionLabel n="02">{t.projects.label}</SectionLabel>
-        <h2 style={{ fontFamily: MONO, fontSize: 26, fontWeight: 700, margin: "0 0 28px" }}>{t.projects.title}</h2>
+        <h2 style={{ fontFamily: MONO, fontSize: 26, fontWeight: 700, margin: "0 0 20px" }}>{t.projects.title}</h2>
+        <div role="group" aria-label="filter" style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 24 }}>
+          {["all", "meca", "elec", "info"].map((key) => {
+            const count = key === "all" ? t.projects.items.length : t.projects.items.filter((p) => p.domains.includes(key)).length;
+            const active = filter === key;
+            return (
+              <button
+                key={key}
+                className="btn"
+                aria-pressed={active}
+                onClick={() => setFilter(key)}
+                style={{
+                  display: "flex", alignItems: "center", gap: 8, cursor: "pointer",
+                  fontFamily: MONO, fontSize: 12, borderRadius: 20, padding: "7px 14px",
+                  background: active ? "rgba(255,180,84,0.12)" : "transparent",
+                  color: active ? C.amber : C.muted,
+                  border: `1px solid ${active ? C.amber : C.border}`,
+                }}
+              >
+                {t.projects.filters[key]}
+                <span style={{ color: active ? C.amber : C.mutedDim, opacity: 0.8 }}>{count}</span>
+              </button>
+            );
+          })}
+        </div>
         <div style={{ display: "grid", gridTemplateColumns: window.innerWidth < 780 ? "1fr" : "1fr 1fr", gap: 18 }}>
-          {t.projects.items.map((p) => (
+          {t.projects.items.filter((p) => filter === "all" || p.domains.includes(filter)).map((p) => (
             <div
               key={p.pid}
               className="card"
@@ -604,11 +651,19 @@ export default function Portfolio() {
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                 <span style={{ fontFamily: MONO, fontSize: 11, color: C.mutedDim }}>{p.pid}{p.org ? ` · ${p.org}` : ""}</span>
-                {p.internal && (
-                  <span style={{ fontFamily: MONO, fontSize: 10, color: C.blue, border: `1px solid ${C.blue}`, borderRadius: 3, padding: "1px 6px" }}>
-                    {t.projects.internalTag}
-                  </span>
-                )}
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  {p.domains.map((d) => (
+                    <span key={d} style={{ display: "flex", alignItems: "center", gap: 5, fontFamily: MONO, fontSize: 10, color: C.mutedDim }}>
+                      <span style={{ width: 6, height: 6, borderRadius: "50%", background: d === "meca" ? C.amber : d === "elec" ? C.blue : C.green }} />
+                      {t.projects.domainShort[d]}
+                    </span>
+                  ))}
+                  {p.internal && (
+                    <span style={{ fontFamily: MONO, fontSize: 10, color: C.blue, border: `1px solid ${C.blue}`, borderRadius: 3, padding: "1px 6px" }}>
+                      {t.projects.internalTag}
+                    </span>
+                  )}
+                </div>
               </div>
               <h3 style={{ fontFamily: SANS, fontSize: 17, fontWeight: 700, margin: 0 }}>{p.name}</h3>
               <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
